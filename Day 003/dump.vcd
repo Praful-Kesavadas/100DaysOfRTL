@@ -1,0 +1,71 @@
+$date
+	Tue Jun 09 16:42:25 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_demux1to4 $end
+$var wire 4 ! out4 [3:0] $end
+$var wire 4 " out3 [3:0] $end
+$var wire 4 # out2 [3:0] $end
+$var wire 4 $ out1 [3:0] $end
+$var reg 4 % in [3:0] $end
+$var reg 2 & sel [1:0] $end
+$scope module uut $end
+$var wire 4 ' in [3:0] $end
+$var wire 2 ( sel [1:0] $end
+$var reg 4 ) out1 [3:0] $end
+$var reg 4 * out2 [3:0] $end
+$var reg 4 + out3 [3:0] $end
+$var reg 4 , out4 [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 ,
+b0 +
+b0 *
+b0 )
+bx (
+b1010 '
+bx &
+b1010 %
+b0 $
+b0 #
+b0 "
+b0 !
+$end
+#10
+b1010 $
+b1010 )
+b0 &
+b0 (
+#20
+b1010 #
+b1010 *
+b0 $
+b0 )
+b1 &
+b1 (
+#30
+b1010 "
+b1010 +
+b0 #
+b0 *
+b10 &
+b10 (
+#40
+b1010 !
+b1010 ,
+b0 "
+b0 +
+b11 &
+b11 (
+#50
