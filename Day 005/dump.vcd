@@ -1,0 +1,75 @@
+$date
+	Wed Jun 10 16:01:21 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_priorityenc8to3 $end
+$var wire 1 ! valid $end
+$var wire 3 " out [2:0] $end
+$var reg 8 # in [7:0] $end
+$scope module uut $end
+$var wire 8 $ in [7:0] $end
+$var wire 1 ! valid $end
+$var reg 3 % out [2:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx %
+bx $
+bx #
+bx "
+x!
+$end
+#10
+b0 "
+b0 %
+1!
+b1 #
+b1 $
+#20
+b1 "
+b1 %
+b11 #
+b11 $
+#30
+b10 "
+b10 %
+b100 #
+b100 $
+#40
+b0 "
+b0 %
+0!
+b0 #
+b0 $
+#50
+b11 "
+b11 %
+1!
+b1010 #
+b1010 $
+#60
+b111 "
+b111 %
+b10010011 #
+b10010011 $
+#70
+b101 "
+b101 %
+b100100 #
+b100100 $
+#80
+b110 "
+b110 %
+b1000010 #
+b1000010 $
+#90
