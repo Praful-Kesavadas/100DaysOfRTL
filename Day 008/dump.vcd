@@ -1,0 +1,315 @@
+$date
+	Fri Jun 12 12:12:17 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_rippleAdder $end
+$var wire 4 ! sum [3:0] $end
+$var wire 1 " carry_out $end
+$var reg 4 # a [3:0] $end
+$var reg 4 $ b [3:0] $end
+$var reg 1 % carry_in $end
+$scope module uut $end
+$var wire 4 & a [3:0] $end
+$var wire 4 ' b [3:0] $end
+$var wire 1 % carry_in $end
+$var wire 4 ( sum [3:0] $end
+$var wire 1 " carry_out $end
+$var wire 4 ) carry [3:0] $end
+$scope module fa1 $end
+$var wire 1 * a $end
+$var wire 1 + b $end
+$var wire 1 % carry_in $end
+$var wire 1 , carry_out $end
+$var wire 1 - sum1 $end
+$var wire 1 . sum $end
+$var wire 1 / carry2 $end
+$var wire 1 0 carry1 $end
+$scope module ha1 $end
+$var wire 1 * a $end
+$var wire 1 + b $end
+$var wire 1 0 carry $end
+$var wire 1 - sum $end
+$upscope $end
+$scope module ha2 $end
+$var wire 1 % a $end
+$var wire 1 - b $end
+$var wire 1 / carry $end
+$var wire 1 . sum $end
+$upscope $end
+$upscope $end
+$scope module fa2 $end
+$var wire 1 1 a $end
+$var wire 1 2 b $end
+$var wire 1 3 carry_in $end
+$var wire 1 4 carry_out $end
+$var wire 1 5 sum1 $end
+$var wire 1 6 sum $end
+$var wire 1 7 carry2 $end
+$var wire 1 8 carry1 $end
+$scope module ha1 $end
+$var wire 1 1 a $end
+$var wire 1 2 b $end
+$var wire 1 8 carry $end
+$var wire 1 5 sum $end
+$upscope $end
+$scope module ha2 $end
+$var wire 1 3 a $end
+$var wire 1 5 b $end
+$var wire 1 7 carry $end
+$var wire 1 6 sum $end
+$upscope $end
+$upscope $end
+$scope module fa3 $end
+$var wire 1 9 a $end
+$var wire 1 : b $end
+$var wire 1 ; carry_in $end
+$var wire 1 < carry_out $end
+$var wire 1 = sum1 $end
+$var wire 1 > sum $end
+$var wire 1 ? carry2 $end
+$var wire 1 @ carry1 $end
+$scope module ha1 $end
+$var wire 1 9 a $end
+$var wire 1 : b $end
+$var wire 1 @ carry $end
+$var wire 1 = sum $end
+$upscope $end
+$scope module ha2 $end
+$var wire 1 ; a $end
+$var wire 1 = b $end
+$var wire 1 ? carry $end
+$var wire 1 > sum $end
+$upscope $end
+$upscope $end
+$scope module fa4 $end
+$var wire 1 A a $end
+$var wire 1 B b $end
+$var wire 1 C carry_in $end
+$var wire 1 D carry_out $end
+$var wire 1 E sum1 $end
+$var wire 1 F sum $end
+$var wire 1 G carry2 $end
+$var wire 1 H carry1 $end
+$scope module ha1 $end
+$var wire 1 A a $end
+$var wire 1 B b $end
+$var wire 1 H carry $end
+$var wire 1 E sum $end
+$upscope $end
+$scope module ha2 $end
+$var wire 1 C a $end
+$var wire 1 E b $end
+$var wire 1 G carry $end
+$var wire 1 F sum $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0H
+0G
+0F
+0E
+0D
+0C
+0B
+0A
+0@
+0?
+0>
+0=
+0<
+0;
+0:
+09
+08
+07
+06
+05
+04
+03
+02
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+b0 )
+b0 (
+b0 '
+b0 &
+0%
+b0 $
+b0 #
+0"
+b0 !
+$end
+#10000
+1.
+1>
+b111 !
+b111 (
+16
+1-
+1=
+15
+1+
+1:
+11
+b101 $
+b101 '
+b10 #
+b10 &
+#20000
+1F
+1C
+1<
+0>
+1?
+1;
+14
+06
+17
+13
+b111 )
+1,
+b1000 !
+b1000 (
+0.
+1/
+0+
+1*
+1%
+b100 $
+b100 '
+b11 #
+b11 &
+#30000
+0;
+1"
+04
+1D
+03
+06
+07
+0>
+0?
+0F
+1G
+b1100 )
+0,
+0-
+05
+0=
+1@
+1E
+b0 !
+b0 (
+0.
+0/
+0*
+01
+19
+1A
+0%
+b1100 #
+b1100 &
+#40000
+1?
+1"
+1;
+1D
+14
+0F
+1G
+17
+1C
+13
+0>
+1<
+b1111 )
+1,
+b0 !
+b0 (
+06
+1=
+0@
+10
+15
+1+
+0:
+1*
+11
+b1 $
+b1 '
+b1111 #
+b1111 &
+#50000
+16
+07
+1>
+0?
+1F
+0G
+05
+18
+0=
+1@
+0E
+1H
+b1111 !
+b1111 (
+1.
+12
+1:
+1B
+1%
+b1111 $
+b1111 '
+#60000
+06
+0>
+0F
+03
+0;
+0C
+0"
+0,
+04
+0<
+b0 )
+0D
+00
+08
+0@
+0H
+b0 !
+b0 (
+0.
+0+
+02
+0:
+0B
+0*
+01
+09
+0A
+0%
+b0 $
+b0 '
+b0 #
+b0 &
+#70000
