@@ -1,0 +1,142 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000002a710b7a8a0 .scope module, "tb_full_sub" "tb_full_sub" 2 1;
+ .timescale 0 0;
+v000002a710bc63a0_0 .var "a", 0 0;
+v000002a710bc6440_0 .var "b", 0 0;
+v000002a710bc6080_0 .var "borrow_in", 0 0;
+v000002a710bc6260_0 .net "borrow_out", 0 0, L_000002a710b66ee0;  1 drivers
+v000002a710bc64e0_0 .net "difference", 0 0, L_000002a710b66c40;  1 drivers
+S_000002a710b7aa30 .scope module, "uut" "full_sub" 2 5, 3 1 0, S_000002a710b7a8a0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /INPUT 1 "borrow_in";
+    .port_info 3 /OUTPUT 1 "difference";
+    .port_info 4 /OUTPUT 1 "borrow_out";
+L_000002a710b66ee0 .functor OR 1, L_000002a710b66af0, L_000002a710b66a80, C4<0>, C4<0>;
+v000002a710bc6300_0 .net "a", 0 0, v000002a710bc63a0_0;  1 drivers
+v000002a710bc6120_0 .net "b", 0 0, v000002a710bc6440_0;  1 drivers
+v000002a710bc61c0_0 .net "borrow1", 0 0, L_000002a710b66af0;  1 drivers
+v000002a710bc6800_0 .net "borrow2", 0 0, L_000002a710b66a80;  1 drivers
+v000002a710bc6b20_0 .net "borrow_in", 0 0, v000002a710bc6080_0;  1 drivers
+v000002a710bc6f80_0 .net "borrow_out", 0 0, L_000002a710b66ee0;  alias, 1 drivers
+v000002a710bc6bc0_0 .net "diff1", 0 0, L_000002a710b66a10;  1 drivers
+v000002a710bc6c60_0 .net "difference", 0 0, L_000002a710b66c40;  alias, 1 drivers
+S_000002a710b78cb0 .scope module, "s1" "half_sub" 3 3, 4 1 0, S_000002a710b7aa30;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "difference";
+    .port_info 3 /OUTPUT 1 "borrow";
+L_000002a710b66a10 .functor XOR 1, v000002a710bc63a0_0, v000002a710bc6440_0, C4<0>, C4<0>;
+L_000002a710b66bd0 .functor NOT 1, v000002a710bc63a0_0, C4<0>, C4<0>, C4<0>;
+L_000002a710b66af0 .functor AND 1, L_000002a710b66bd0, v000002a710bc6440_0, C4<1>, C4<1>;
+v000002a710b26de0_0 .net *"_ivl_2", 0 0, L_000002a710b66bd0;  1 drivers
+v000002a710b26990_0 .net "a", 0 0, v000002a710bc63a0_0;  alias, 1 drivers
+v000002a710b2be60_0 .net "b", 0 0, v000002a710bc6440_0;  alias, 1 drivers
+v000002a710b7abc0_0 .net "borrow", 0 0, L_000002a710b66af0;  alias, 1 drivers
+v000002a710b7ac60_0 .net "difference", 0 0, L_000002a710b66a10;  alias, 1 drivers
+S_000002a710b67b90 .scope module, "s2" "half_sub" 3 4, 4 1 0, S_000002a710b7aa30;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "difference";
+    .port_info 3 /OUTPUT 1 "borrow";
+L_000002a710b66c40 .functor XOR 1, L_000002a710b66a10, v000002a710bc6080_0, C4<0>, C4<0>;
+L_000002a710b66b60 .functor NOT 1, L_000002a710b66a10, C4<0>, C4<0>, C4<0>;
+L_000002a710b66a80 .functor AND 1, L_000002a710b66b60, v000002a710bc6080_0, C4<1>, C4<1>;
+v000002a710b67d20_0 .net *"_ivl_2", 0 0, L_000002a710b66b60;  1 drivers
+v000002a710b78e40_0 .net "a", 0 0, L_000002a710b66a10;  alias, 1 drivers
+v000002a710b78ee0_0 .net "b", 0 0, v000002a710bc6080_0;  alias, 1 drivers
+v000002a710b78f80_0 .net "borrow", 0 0, L_000002a710b66a80;  alias, 1 drivers
+v000002a710b79020_0 .net "difference", 0 0, L_000002a710b66c40;  alias, 1 drivers
+    .scope S_000002a710b7a8a0;
+T_0 ;
+    %vpi_call 2 8 "$dumpfile", "dump.vcd" {0 0 0};
+    %vpi_call 2 9 "$dumpvars", 32'sb00000000000000000000000000000000 {0 0 0};
+    %vpi_call 2 10 "$monitor", "Time: %0d ns | Inputs: A = %d, B = %d, Borrow_in = %d | Outputs: Diff = %d, B_out = %d", $time, v000002a710bc63a0_0, v000002a710bc6440_0, v000002a710bc6080_0, v000002a710bc64e0_0, v000002a710bc6260_0 {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_000002a710b7a8a0;
+T_1 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002a710bc63a0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002a710bc6440_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002a710bc6080_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002a710bc63a0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002a710bc6440_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002a710bc6080_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002a710bc63a0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002a710bc6440_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002a710bc6080_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002a710bc63a0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002a710bc6440_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002a710bc6080_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002a710bc63a0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002a710bc6440_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002a710bc6080_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002a710bc63a0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002a710bc6440_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002a710bc6080_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002a710bc63a0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002a710bc6440_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002a710bc6080_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002a710bc63a0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002a710bc6440_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002a710bc6080_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002a710bc63a0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002a710bc6440_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002a710bc6080_0, 0, 1;
+    %delay 10, 0;
+    %vpi_call 2 27 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 5;
+    "N/A";
+    "<interactive>";
+    "tb.v";
+    ".\full_sub.v";
+    ".\half_sub.v";
