@@ -1,13 +1,13 @@
 `timescale 1ns / 1ps
 
-module tb_rippleAdder();
+module tb_ripple_adder();
 
     reg [3:0] a, b;
     reg carry_in;
     wire [3:0] sum;
     wire carry_out;
 
-    rippleAdder uut (
+    ripple_adder uut (
         .a(a),
         .b(b),
         .carry_in(carry_in),
