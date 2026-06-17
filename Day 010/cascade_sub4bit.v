@@ -5,7 +5,7 @@ module cascade_sub4bit(input [3:0] a, b, input borrow_in, output [3:0] differenc
     wire carry_out;
 
     assign b_inv = ~b;
-    rippleAdder ra(.a(a), .b(b_inv), .carry_in(~borrow_in), .sum(difference), .carry_out(carry_out));
+    ripple_adder ra(.a(a), .b(b_inv), .carry_in(~borrow_in), .sum(difference), .carry_out(carry_out));
 
     assign borrow_out = ~carry_out;
 endmodule
