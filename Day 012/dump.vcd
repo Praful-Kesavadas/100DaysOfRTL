@@ -1,0 +1,74 @@
+$date
+	Tue Jun 16 16:39:51 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_mag_comp $end
+$var wire 1 ! a_less_than_b $end
+$var wire 1 " a_greater_than_b $end
+$var wire 1 # a_equal_b $end
+$var reg 4 $ a [3:0] $end
+$var reg 4 % b [3:0] $end
+$scope module uut $end
+$var wire 4 & a [3:0] $end
+$var wire 1 " a_greater_than_b $end
+$var wire 1 ! a_less_than_b $end
+$var wire 4 ' b [3:0] $end
+$var wire 4 ( equalities [3:0] $end
+$var wire 1 # a_equal_b $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b1111 (
+b0 '
+b0 &
+b0 %
+b0 $
+1#
+0"
+0!
+$end
+#10000
+1"
+0!
+0#
+b111 (
+b100 %
+b100 '
+b1100 $
+b1100 &
+#20000
+1!
+0"
+b101 (
+b1001 %
+b1001 '
+b11 $
+b11 &
+#30000
+0!
+1#
+b1111 (
+b1111 %
+b1111 '
+b1111 $
+b1111 &
+#40000
+1"
+0!
+0#
+b1110 (
+b110 %
+b110 '
+b111 $
+b111 &
+#50000
