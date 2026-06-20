@@ -1,0 +1,94 @@
+$date
+	Tue Jun 16 19:44:18 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_cla_4bit $end
+$var wire 4 ! sum [3:0] $end
+$var wire 1 " carry_out $end
+$var reg 4 # a [3:0] $end
+$var reg 4 $ b [3:0] $end
+$var reg 1 % carry_in $end
+$scope module uut $end
+$var wire 4 & a [3:0] $end
+$var wire 4 ' b [3:0] $end
+$var wire 1 % carry_in $end
+$var wire 1 " carry_out $end
+$var wire 4 ( g [3:0] $end
+$var wire 4 ) p [3:0] $end
+$var wire 4 * sum [3:0] $end
+$var wire 3 + c [3:1] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 +
+b0 *
+b0 )
+b0 (
+b0 '
+b0 &
+0%
+b0 $
+b0 #
+0"
+b0 !
+$end
+#10000
+b100 +
+b1001 !
+b1001 *
+b100 (
+b1 )
+b101 $
+b101 '
+b100 #
+b100 &
+#20000
+b111 +
+b1000 !
+b1000 *
+b0 (
+b111 )
+1%
+b100 $
+b100 '
+b11 #
+b11 &
+#30000
+1"
+b0 !
+b0 *
+b1111 )
+b0 $
+b0 '
+b1111 #
+b1111 &
+#40000
+1"
+b1111 !
+b1111 *
+b1111 (
+b0 )
+b1111 $
+b1111 '
+#50000
+0"
+b0 +
+b0 !
+b0 *
+b0 (
+0%
+b0 $
+b0 '
+b0 #
+b0 &
+#60000
