@@ -1,0 +1,268 @@
+$date
+	Tue Jun 30 12:57:46 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_bcd_counter_2digit $end
+$var wire 4 ! units_digit [3:0] $end
+$var wire 4 " tens_digit [3:0] $end
+$var wire 1 # carry_out $end
+$var reg 1 $ clk $end
+$var reg 1 % nreset $end
+$var reg 1 & start $end
+$scope module uut $end
+$var wire 1 $ clk $end
+$var wire 1 % nreset $end
+$var wire 1 & start $end
+$var wire 1 ' start2 $end
+$var wire 4 ( units_digit [3:0] $end
+$var wire 1 ) units_carry $end
+$var wire 4 * tens_digit [3:0] $end
+$var wire 1 # carry_out $end
+$scope module c1 $end
+$var wire 1 $ clk $end
+$var wire 1 % nreset $end
+$var wire 1 & start $end
+$var wire 1 ) carry_out $end
+$var reg 4 + count [3:0] $end
+$upscope $end
+$scope module c2 $end
+$var wire 1 $ clk $end
+$var wire 1 % nreset $end
+$var wire 1 ' start $end
+$var wire 1 # carry_out $end
+$var reg 4 , count [3:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 ,
+b0 +
+b0 *
+0)
+b0 (
+0'
+0&
+0%
+0$
+0#
+b0 "
+b0 !
+$end
+#5000
+1$
+#10000
+0$
+#12000
+1%
+#15000
+1$
+#20000
+0$
+#22000
+1&
+#25000
+b1 !
+b1 (
+b1 +
+1$
+#30000
+0$
+#35000
+b10 !
+b10 (
+b10 +
+1$
+#40000
+0$
+#45000
+b11 !
+b11 (
+b11 +
+1$
+#50000
+0$
+#55000
+b100 !
+b100 (
+b100 +
+1$
+#60000
+0$
+#65000
+b101 !
+b101 (
+b101 +
+1$
+#70000
+0$
+#75000
+b110 !
+b110 (
+b110 +
+1$
+#80000
+0$
+#85000
+b111 !
+b111 (
+b111 +
+1$
+#90000
+0$
+#95000
+b1000 !
+b1000 (
+b1000 +
+1$
+#100000
+0$
+#105000
+1'
+1)
+b1001 !
+b1001 (
+b1001 +
+1$
+#110000
+0$
+#115000
+0'
+0)
+b0 !
+b0 (
+b0 +
+b1 "
+b1 *
+b1 ,
+1$
+#120000
+0$
+#125000
+b1 !
+b1 (
+b1 +
+1$
+#130000
+0$
+#135000
+b10 !
+b10 (
+b10 +
+1$
+#140000
+0$
+#145000
+b11 !
+b11 (
+b11 +
+1$
+#150000
+0$
+#155000
+b100 !
+b100 (
+b100 +
+1$
+#160000
+0$
+#165000
+b101 !
+b101 (
+b101 +
+1$
+#170000
+0$
+#175000
+b110 !
+b110 (
+b110 +
+1$
+#180000
+0$
+#185000
+b111 !
+b111 (
+b111 +
+1$
+#190000
+0$
+#195000
+b1000 !
+b1000 (
+b1000 +
+1$
+#200000
+0$
+#205000
+1'
+1)
+b1001 !
+b1001 (
+b1001 +
+1$
+#210000
+0$
+#215000
+0'
+0)
+b0 !
+b0 (
+b0 +
+b10 "
+b10 *
+b10 ,
+1$
+#220000
+0$
+#225000
+b1 !
+b1 (
+b1 +
+1$
+#230000
+0$
+#235000
+b10 !
+b10 (
+b10 +
+1$
+#240000
+0$
+#245000
+b11 !
+b11 (
+b11 +
+1$
+#250000
+0$
+#255000
+b100 !
+b100 (
+b100 +
+1$
+#260000
+0$
+#265000
+b101 !
+b101 (
+b101 +
+1$
+#270000
+0$
+#272000
+0&
+#275000
+1$
+#280000
+0$
+#282000
