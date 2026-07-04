@@ -1,0 +1,187 @@
+$date
+	Tue Jun 30 16:55:32 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_bcd_counter_2digit $end
+$var wire 1 ! clk_out $end
+$var parameter 32 " DIV_FACTOR $end
+$var reg 1 # clk_in $end
+$var reg 1 $ nreset $end
+$var reg 1 % start $end
+$scope module uut $end
+$var wire 1 # clk_in $end
+$var wire 1 $ nreset $end
+$var wire 1 % start $end
+$var parameter 32 & DIVIDE_BY $end
+$var parameter 33 ' MIDPOINT $end
+$var parameter 32 ( WIDTH $end
+$var reg 1 ! clk_out $end
+$var reg 1 ) count $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1 (
+b1 '
+b100 &
+b100 "
+$end
+#0
+$dumpvars
+0)
+0%
+0$
+0#
+0!
+$end
+#5000
+1#
+#10000
+0#
+#12000
+1$
+#15000
+1#
+#20000
+0#
+#22000
+1%
+#25000
+1)
+1#
+#30000
+0#
+#35000
+1!
+0)
+1#
+#40000
+0#
+#45000
+1)
+1#
+#50000
+0#
+#55000
+0!
+0)
+1#
+#60000
+0#
+#65000
+1)
+1#
+#70000
+0#
+#75000
+1!
+0)
+1#
+#80000
+0#
+#85000
+1)
+1#
+#90000
+0#
+#95000
+0!
+0)
+1#
+#100000
+0#
+#105000
+1)
+1#
+#110000
+0#
+#115000
+1!
+0)
+1#
+#120000
+0#
+#125000
+1)
+1#
+#130000
+0#
+#135000
+0!
+0)
+1#
+#140000
+0#
+#145000
+1)
+1#
+#150000
+0#
+#155000
+1!
+0)
+1#
+#160000
+0#
+#165000
+1)
+1#
+#170000
+0#
+#175000
+0!
+0)
+1#
+#180000
+0#
+#182000
+0%
+#185000
+1#
+#190000
+0#
+#195000
+1#
+#200000
+0#
+#205000
+1#
+#210000
+0#
+#212000
+1%
+#215000
+1)
+1#
+#220000
+0#
+#225000
+1!
+0)
+1#
+#230000
+0#
+#235000
+1)
+1#
+#240000
+0#
+#245000
+0!
+0)
+1#
+#250000
+0#
+#252000
+0$
+#255000
+1#
+#260000
+0#
+#262000
