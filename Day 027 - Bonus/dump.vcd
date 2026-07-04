@@ -1,0 +1,167 @@
+$date
+	Wed Jul 01 11:47:15 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_clk_divider_odd $end
+$var wire 1 ! clk_out $end
+$var reg 1 " clk_in $end
+$var reg 1 # nreset $end
+$var reg 1 $ start $end
+$scope module uut $end
+$var wire 1 " clk_in $end
+$var wire 1 ! clk_out $end
+$var wire 1 # nreset $end
+$var wire 1 $ start $end
+$var parameter 32 % DIVIDE_BY $end
+$var parameter 33 & MIDPOINT $end
+$var parameter 32 ' WIDTH $end
+$var reg 1 ( clk_neg $end
+$var reg 1 ) clk_pos $end
+$var reg 2 * count_pos [1:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b10 '
+b1 &
+b11 %
+$end
+#0
+$dumpvars
+b0 *
+0)
+0(
+0$
+0#
+0"
+0!
+$end
+#5000
+1"
+#10000
+0"
+#12000
+1#
+#15000
+1$
+1"
+#20000
+0"
+#25000
+1!
+1)
+b1 *
+1"
+#30000
+1(
+0"
+#35000
+0)
+b10 *
+1"
+#40000
+0!
+0(
+0"
+#45000
+b0 *
+1"
+#50000
+0"
+#55000
+1!
+1)
+b1 *
+1"
+#60000
+1(
+0"
+#65000
+0)
+b10 *
+1"
+#70000
+0!
+0(
+0"
+#75000
+b0 *
+1"
+#80000
+0"
+#85000
+1!
+1)
+b1 *
+1"
+#90000
+1(
+0"
+#95000
+0)
+b10 *
+1"
+#100000
+0!
+0(
+0"
+#105000
+b0 *
+1"
+#110000
+0"
+#115000
+1!
+1)
+b1 *
+1"
+#120000
+1(
+0"
+#125000
+0)
+b10 *
+1"
+#130000
+0!
+0(
+0"
+#135000
+b0 *
+1"
+#140000
+0"
+#145000
+1!
+1)
+b1 *
+1"
+#150000
+1(
+0"
+#155000
+0)
+b10 *
+1"
+#160000
+0!
+0(
+0"
+#165000
+b0 *
+0$
+1"
+#170000
+0"
+#175000
+1"
+#180000
+0"
+#185000
+1"
