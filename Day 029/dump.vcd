@@ -1,0 +1,152 @@
+$date
+	Fri Jul 03 22:59:58 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_edge_detector_sequential $end
+$var wire 1 ! same_level $end
+$var wire 1 " rising_edge $end
+$var wire 1 # falling_edge $end
+$var reg 1 $ clk $end
+$var reg 1 % nreset $end
+$var reg 1 & signal $end
+$scope module uut $end
+$var wire 1 $ clk $end
+$var wire 1 % nreset $end
+$var wire 1 & signal $end
+$var reg 1 # falling_edge $end
+$var reg 1 " rising_edge $end
+$var reg 1 ! same_level $end
+$var reg 1 ' signal_curr $end
+$var reg 1 ( signal_prev $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0(
+0'
+0&
+0%
+0$
+0#
+0"
+0!
+$end
+#5000
+1$
+#10000
+0$
+#12000
+1%
+#15000
+1!
+1$
+#20000
+0$
+#23000
+1&
+#25000
+1'
+1$
+#30000
+0$
+#35000
+1"
+0!
+1(
+1$
+#40000
+0$
+#45000
+0"
+1!
+1$
+#50000
+0$
+#55000
+1$
+#60000
+0$
+#65000
+1$
+#70000
+0$
+#75000
+1$
+#80000
+0$
+#85000
+1$
+#90000
+0$
+#95000
+1$
+#100000
+0$
+#105000
+1$
+#110000
+0$
+#115000
+1$
+#120000
+0$
+#125000
+1$
+#127000
+0&
+#130000
+0$
+#135000
+0'
+1$
+#140000
+0$
+#145000
+1#
+0!
+0(
+1$
+#150000
+0$
+#155000
+0#
+1!
+1$
+#160000
+0$
+#165000
+1$
+#170000
+0$
+#175000
+1$
+#180000
+0$
+#185000
+1$
+#190000
+0$
+#195000
+1$
+#200000
+0$
+#205000
+1$
+#210000
+0$
+#215000
+1$
+#220000
+0$
+#225000
+1$
+#227000
