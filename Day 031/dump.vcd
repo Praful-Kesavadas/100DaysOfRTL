@@ -1,0 +1,210 @@
+$date
+	Sun Jul 05 00:39:25 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_seq_detector $end
+$var wire 1 ! detected $end
+$var reg 1 " clk $end
+$var reg 1 # in $end
+$var reg 1 $ nreset $end
+$scope module uut $end
+$var wire 1 " clk $end
+$var wire 1 # in $end
+$var wire 1 $ nreset $end
+$var wire 1 ! detected $end
+$var parameter 3 % S0 $end
+$var parameter 3 & S1 $end
+$var parameter 3 ' S2 $end
+$var parameter 3 ( S3 $end
+$var parameter 3 ) S4 $end
+$var reg 3 * next_state [2:0] $end
+$var reg 3 + state [2:0] $end
+$upscope $end
+$scope task push_bit $end
+$var reg 1 , b $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b100 )
+b11 (
+b10 '
+b1 &
+b0 %
+$end
+#0
+$dumpvars
+x,
+b0 +
+b0 *
+0$
+0#
+0"
+0!
+$end
+#5000
+1"
+#10000
+0"
+#15000
+1"
+1$
+#20000
+0"
+1,
+#25000
+1"
+#26000
+b1 *
+0,
+1#
+#30000
+0"
+#35000
+b1 +
+1"
+#36000
+b10 *
+1,
+0#
+#40000
+0"
+#45000
+b0 *
+b10 +
+1"
+#46000
+b11 *
+1#
+#50000
+0"
+#55000
+b100 *
+b11 +
+1"
+#56000
+0,
+#60000
+0"
+#65000
+b1 *
+1!
+b100 +
+1"
+#66000
+b10 *
+0#
+#70000
+0"
+#75000
+b0 *
+0!
+b10 +
+1"
+#76000
+1,
+#80000
+0"
+#85000
+b0 +
+1"
+#86000
+b1 *
+0,
+1#
+#90000
+0"
+#95000
+b1 +
+1"
+#96000
+b10 *
+1,
+0#
+#100000
+0"
+#105000
+b0 *
+b10 +
+1"
+#106000
+b11 *
+1#
+#110000
+0"
+#115000
+b100 *
+b11 +
+1"
+#116000
+0,
+#120000
+0"
+#125000
+b1 *
+1!
+b100 +
+1"
+#126000
+b10 *
+1,
+0#
+#130000
+0"
+#135000
+b0 *
+0!
+b10 +
+1"
+#136000
+b11 *
+1#
+#140000
+0"
+#145000
+b100 *
+b11 +
+1"
+#146000
+0,
+#150000
+0"
+#155000
+b1 *
+1!
+b100 +
+1"
+#156000
+b10 *
+0#
+#160000
+0"
+#165000
+b0 *
+0!
+b10 +
+1"
+#170000
+0"
+#175000
+b0 +
+1"
+#180000
+0"
+#185000
+1"
+#190000
+0"
+#195000
+1"
+#200000
+0"
+#205000
+1"
+#206000
