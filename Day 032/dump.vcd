@@ -1,0 +1,143 @@
+$date
+	Sun Jul 05 13:17:28 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_seq_detector_nonoverlapping $end
+$var wire 1 ! detected $end
+$var reg 1 " clk $end
+$var reg 1 # in $end
+$var reg 1 $ nreset $end
+$scope module uut $end
+$var wire 1 " clk $end
+$var wire 1 ! detected $end
+$var wire 1 # in $end
+$var wire 1 $ nreset $end
+$var parameter 2 % S0 $end
+$var parameter 2 & S1 $end
+$var parameter 2 ' S2 $end
+$var parameter 2 ( S3 $end
+$var reg 2 ) next_state [1:0] $end
+$var reg 2 * state [1:0] $end
+$upscope $end
+$scope task push_bit $end
+$var reg 1 + b $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b11 (
+b10 '
+b1 &
+b0 %
+$end
+#0
+$dumpvars
+x+
+b0 *
+b0 )
+0$
+0#
+0"
+0!
+$end
+#5000
+1"
+#10000
+0"
+#15000
+1"
+1$
+#20000
+0"
+1+
+#25000
+1"
+#26000
+b1 )
+0+
+1#
+#30000
+0"
+#35000
+b1 *
+1"
+#36000
+b10 )
+1+
+0#
+#40000
+0"
+#45000
+b0 )
+b10 *
+1"
+#46000
+b11 )
+1#
+#50000
+0"
+#55000
+b0 )
+1!
+b11 *
+1"
+#56000
+0+
+#60000
+0"
+#65000
+b1 )
+0!
+b0 *
+1"
+#66000
+b0 )
+1+
+0#
+#70000
+0"
+#75000
+1"
+#76000
+b1 )
+1#
+#80000
+0"
+#85000
+b1 *
+1"
+#86000
+0+
+#90000
+0"
+#95000
+1"
+#96000
+b10 )
+0#
+#100000
+0"
+#105000
+b0 )
+b10 *
+1"
+#110000
+0"
+#115000
+b0 *
+1"
+#120000
+0"
+#125000
+1"
+#130000
+0"
+#135000
+1"
+#136000
