@@ -1,0 +1,332 @@
+$date
+	Tue Jul 07 19:16:10 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_vending_machine_controller $end
+$var wire 1 ! condition_met $end
+$var wire 8 " change_out [7:0] $end
+$var parameter 3 # BALANCE_ISSUE $end
+$var parameter 3 $ IDLE $end
+$var parameter 3 % INSUFFICIENT_AMOUNT $end
+$var parameter 3 & ITEM_DISPOSE $end
+$var parameter 3 ' ITEM_SEL $end
+$var parameter 3 ( MONEY_IN $end
+$var parameter 3 ) TRANS_CANCEL $end
+$var parameter 32 * WIDTH $end
+$var reg 1 + cancel_transaction $end
+$var reg 1 , clk $end
+$var reg 2 - coin_trigger [1:0] $end
+$var reg 1 . done_in $end
+$var reg 3 / item_select [2:0] $end
+$var reg 1 0 nreset $end
+$var reg 2 1 quantity [1:0] $end
+$scope module uut $end
+$var wire 1 + cancel_transaction $end
+$var wire 1 , clk $end
+$var wire 2 2 coin_trigger [1:0] $end
+$var wire 1 . done_in $end
+$var wire 3 3 item_select [2:0] $end
+$var wire 1 0 nreset $end
+$var wire 2 4 quantity [1:0] $end
+$var wire 8 5 next_credit_pred [7:0] $end
+$var wire 8 6 coin_value [7:0] $end
+$var parameter 3 7 BALANCE_ISSUE $end
+$var parameter 3 8 IDLE $end
+$var parameter 3 9 INSUFFICIENT_AMOUNT $end
+$var parameter 3 : ITEM_DISPOSE $end
+$var parameter 3 ; ITEM_SEL $end
+$var parameter 3 < MONEY_IN $end
+$var parameter 32 = PRICE1 $end
+$var parameter 32 > PRICE2 $end
+$var parameter 32 ? PRICE3 $end
+$var parameter 3 @ TRANS_CANCEL $end
+$var parameter 8 A VAL_DIME $end
+$var parameter 8 B VAL_NICKEL $end
+$var parameter 8 C VAL_QUARTER $end
+$var parameter 8 D VAL_ZERO $end
+$var parameter 32 E WIDTH $end
+$var reg 8 F base_price [7:0] $end
+$var reg 8 G change_out [7:0] $end
+$var reg 1 ! condition_met $end
+$var reg 8 H credit_accum [7:0] $end
+$var reg 1 I credit_ok $end
+$var reg 3 J next_state [2:0] $end
+$var reg 3 K state [2:0] $end
+$var reg 8 L target_cost [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1000 E
+b0 D
+b11001 C
+b101 B
+b1010 A
+b11 @
+b10100 ?
+b1111 >
+b1010 =
+b10 <
+b1 ;
+b101 :
+b100 9
+b0 8
+b110 7
+b1000 *
+b11 )
+b10 (
+b1 '
+b101 &
+b100 %
+b0 $
+b110 #
+$end
+#0
+$dumpvars
+b0 L
+b0 K
+b0 J
+0I
+b0 H
+b0 G
+b11111111 F
+b0 6
+b0 5
+b0 4
+b0 3
+b0 2
+b0 1
+00
+b0 /
+0.
+b0 -
+0,
+0+
+b0 "
+0!
+$end
+#5000
+1,
+#10000
+0,
+#15000
+1,
+#20000
+0,
+#25000
+1I
+1,
+10
+#30000
+0,
+#35000
+1,
+#40000
+0,
+#45000
+b1 K
+b10 J
+b1010 F
+1,
+b1 1
+b1 4
+b1 /
+b1 3
+#50000
+0,
+#55000
+b10 K
+b1010 L
+1,
+#60000
+0,
+#65000
+0I
+b11001 5
+b11001 6
+b11111111 F
+1,
+b11 -
+b11 2
+b0 /
+b0 3
+#70000
+0,
+#75000
+b110010 5
+1I
+b11001 H
+1,
+#80000
+0,
+#85000
+b0 6
+b11001 5
+1,
+b0 -
+b0 2
+#90000
+0,
+#95000
+1,
+#100000
+0,
+#105000
+b110010 5
+b11001 6
+1,
+b11 -
+b11 2
+#110000
+0,
+#115000
+b1001011 5
+b110010 H
+1,
+#120000
+0,
+#125000
+b0 6
+b110010 5
+1,
+b0 -
+b0 2
+#130000
+0,
+#135000
+1,
+#140000
+0,
+#145000
+b101 K
+b110 J
+1,
+1.
+#150000
+0,
+#155000
+b0 J
+b110 K
+b101000 "
+b101000 G
+1!
+1,
+#160000
+0,
+#165000
+b0 5
+b0 H
+b0 "
+b0 G
+0!
+b0 K
+b0 J
+1,
+0.
+#170000
+0,
+#175000
+0I
+1,
+#180000
+0,
+#185000
+1,
+#190000
+0,
+#195000
+1,
+#200000
+0,
+#205000
+b1 K
+b10 J
+b1111 F
+1,
+b10 /
+b10 3
+#210000
+0,
+#215000
+b10 K
+b1111 L
+1,
+#220000
+0,
+#225000
+b1010 5
+b1010 6
+b11111111 F
+1,
+b10 -
+b10 2
+b0 /
+b0 3
+#230000
+0,
+#235000
+b10100 5
+b1010 H
+1,
+#240000
+0,
+#245000
+1I
+b1010 5
+b0 6
+1,
+b0 -
+b0 2
+#250000
+0,
+#255000
+0I
+1,
+#260000
+0,
+#265000
+b11 K
+b110 J
+1,
+1+
+#270000
+0,
+#275000
+b0 J
+b110 K
+b1010 "
+b1010 G
+1,
+#280000
+0,
+#285000
+b0 5
+b0 H
+b0 "
+b0 G
+b0 K
+b0 J
+1,
+0+
+#290000
+0,
+#295000
+1,
+#300000
+0,
+#305000
+1,
+#310000
+0,
+#315000
+1,
+#320000
+0,
+#325000
+1,
