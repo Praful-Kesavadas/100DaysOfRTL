@@ -1,0 +1,367 @@
+$date
+	Sun Jul 19 22:34:13 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_non_restoring_divider $end
+$var wire 1 ! valid $end
+$var wire 5 " remainder [4:0] $end
+$var wire 4 # quotient [3:0] $end
+$var wire 1 $ div_by_zero $end
+$var parameter 32 % WIDTH $end
+$var reg 1 & clk $end
+$var reg 4 ' dividend [3:0] $end
+$var reg 4 ( divisor [3:0] $end
+$var reg 1 ) nreset $end
+$var reg 1 * start $end
+$scope module uut $end
+$var wire 1 & clk $end
+$var wire 1 $ div_by_zero $end
+$var wire 4 + dividend [3:0] $end
+$var wire 4 , divisor [3:0] $end
+$var wire 1 ) nreset $end
+$var wire 1 * start $end
+$var wire 1 ! valid $end
+$var wire 5 - remainder [4:0] $end
+$var wire 9 . raw_left_shift [8:0] $end
+$var wire 4 / quotient [3:0] $end
+$var wire 1 0 current_sign $end
+$var wire 1 1 compute_done $end
+$var parameter 2 2 COMPUTE $end
+$var parameter 2 3 DONE $end
+$var parameter 2 4 IDLE $end
+$var parameter 32 5 WIDTH $end
+$var reg 5 6 A_new [4:0] $end
+$var reg 3 7 count [2:0] $end
+$var reg 2 8 next_state [1:0] $end
+$var reg 9 9 shifted_vec [8:0] $end
+$var reg 2 : state [1:0] $end
+$var reg 9 ; vector [8:0] $end
+$upscope $end
+$scope task test_division $end
+$var reg 4 < test_den [3:0] $end
+$var reg 4 = test_num [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b100 5
+b0 4
+b10 3
+b1 2
+b100 %
+$end
+#0
+$dumpvars
+bx =
+bx <
+b0 ;
+b0 :
+b1 9
+b0 8
+b0 7
+b0 6
+01
+00
+b1111 /
+b0 .
+b0 -
+b0 ,
+b0 +
+0*
+0)
+b0 (
+b0 '
+0&
+0$
+b1111 #
+b0 "
+0!
+$end
+#5000
+1&
+#10000
+0&
+#15000
+1&
+#20000
+0&
+1)
+#25000
+1&
+#30000
+0&
+#35000
+1&
+#40000
+0&
+b100 <
+b1100 =
+#45000
+b11000 .
+b1100 ;
+b111011000 9
+b11101 6
+b1100 #
+b1100 /
+b1 8
+1*
+b100 (
+b100 ,
+b1100 '
+b1100 +
+1&
+#50000
+0&
+#55000
+b1 :
+b1 8
+0*
+1&
+#60000
+0&
+#65000
+b1 "
+b1 -
+b1000 #
+b1000 /
+b111110000 9
+b11111 6
+b110110000 .
+10
+b1 7
+b111011000 ;
+1&
+#70000
+0&
+#75000
+b11 "
+b11 -
+b0 #
+b0 /
+b100001 9
+b10 6
+b111100000 .
+b10 7
+b111110000 ;
+1&
+#80000
+0&
+#85000
+b10 "
+b10 -
+b1 #
+b1 /
+b11 9
+b0 6
+b10 8
+b1000010 .
+00
+11
+b11 7
+b100001 ;
+1&
+#90000
+0&
+#95000
+b0 "
+b0 -
+b11 #
+b11 /
+b111000110 9
+b11100 6
+b0 8
+b110 .
+1!
+b10 :
+01
+b100 7
+b11 ;
+1&
+#100000
+0&
+#105000
+b0 7
+0!
+b0 :
+1&
+#110000
+0&
+#115000
+1&
+#116000
+b11 <
+b1011 =
+#120000
+0&
+#125000
+b1011 #
+b1011 /
+b10110 .
+b1011 ;
+b111100110 9
+b11110 6
+b1 8
+1*
+b11 (
+b11 ,
+b1011 '
+b1011 +
+1&
+#130000
+0&
+#135000
+b1 :
+b1 8
+0*
+1&
+#140000
+0&
+#145000
+b1 "
+b1 -
+b110 #
+b110 /
+b111111100 9
+b11111 6
+b111001100 .
+10
+b1 7
+b111100110 ;
+1&
+#150000
+0&
+#155000
+b10 "
+b10 -
+b1100 #
+b1100 /
+b101001 9
+b10 6
+b111111000 .
+b10 7
+b111111100 ;
+1&
+#160000
+0&
+#165000
+b1001 #
+b1001 /
+b100011 9
+b10 8
+b1010010 .
+00
+11
+b11 7
+b101001 ;
+1&
+#170000
+0&
+#175000
+b11 #
+b11 /
+b10111 9
+b1 6
+b0 8
+b1000110 .
+1!
+b10 :
+01
+b100 7
+b100011 ;
+1&
+#180000
+0&
+#185000
+b0 7
+0!
+b0 :
+1&
+#190000
+0&
+#195000
+1&
+#196000
+b101 <
+b0 =
+#200000
+0&
+#205000
+b0 .
+b0 ;
+b0 #
+b0 /
+b0 "
+b0 -
+b110110000 9
+b11011 6
+b10 8
+1*
+b101 (
+b101 ,
+b0 '
+b0 +
+1&
+#210000
+0&
+#215000
+1!
+b10 :
+b0 8
+0*
+1&
+#220000
+0&
+#225000
+0!
+b0 :
+1&
+#230000
+0&
+#235000
+1&
+#236000
+b0 <
+b1000 =
+#240000
+0&
+#245000
+b10000 .
+b1000 ;
+b10001 9
+b1 6
+b1111 #
+b1111 /
+b10 8
+1*
+b0 (
+b0 ,
+b1000 '
+b1000 +
+1&
+#250000
+0&
+#255000
+1$
+1!
+b10 :
+b0 8
+0*
+1&
+#260000
+0&
+#265000
+0$
+0!
+b0 :
+1&
+#270000
+0&
+#275000
+1&
+#276000
