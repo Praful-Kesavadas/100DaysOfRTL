@@ -1,0 +1,409 @@
+$date
+	Thu Aug 06 23:01:50 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_alu $end
+$var wire 1 ! zero $end
+$var wire 16 " result [15:0] $end
+$var wire 1 # overflow $end
+$var wire 1 $ negative $end
+$var wire 1 % carry $end
+$var parameter 32 & CLK_PERIOD $end
+$var parameter 32 ' DATA_WIDTH $end
+$var reg 16 ( A [15:0] $end
+$var reg 16 ) B [15:0] $end
+$var reg 4 * alu_op [3:0] $end
+$var reg 1 + clk $end
+$var reg 1 , nreset $end
+$var integer 32 - errors [31:0] $end
+$scope module uut $end
+$var wire 16 . A [15:0] $end
+$var wire 16 / B [15:0] $end
+$var wire 4 0 alu_op [3:0] $end
+$var wire 1 1 arith_overflow $end
+$var wire 1 + clk $end
+$var wire 1 , nreset $end
+$var wire 1 ! zero $end
+$var wire 4 2 shift_amt [3:0] $end
+$var wire 1 $ negative $end
+$var wire 16 3 arith_result [15:0] $end
+$var wire 17 4 arith_full [16:0] $end
+$var wire 1 5 arith_carry $end
+$var parameter 4 6 ADD $end
+$var parameter 4 7 AND $end
+$var parameter 32 8 DATA_WIDTH $end
+$var parameter 4 9 DEC $end
+$var parameter 4 : INC $end
+$var parameter 4 ; NAND $end
+$var parameter 4 < NOR $end
+$var parameter 4 = NOT $end
+$var parameter 4 > OR $end
+$var parameter 4 ? PASS $end
+$var parameter 4 @ ROL $end
+$var parameter 4 A ROR $end
+$var parameter 32 B SHIFT_BITS $end
+$var parameter 4 C SLL $end
+$var parameter 4 D SRA $end
+$var parameter 4 E SRL $end
+$var parameter 4 F SUB $end
+$var parameter 4 G XOR $end
+$var reg 16 H B_eff [15:0] $end
+$var reg 1 I C_in $end
+$var reg 1 % carry $end
+$var reg 1 J carry_comb $end
+$var reg 1 # overflow $end
+$var reg 1 K overflow_comb $end
+$var reg 16 L result [15:0] $end
+$var reg 16 M result_comb [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b110 G
+b1 F
+b1011 E
+b1100 D
+b1010 C
+b100 B
+b1110 A
+b1101 @
+b1111 ?
+b101 >
+b111 =
+b1001 <
+b1000 ;
+b10 :
+b11 9
+b10000 8
+b100 7
+b0 6
+b10000 '
+b1010 &
+$end
+#0
+$dumpvars
+b0 M
+b0 L
+0K
+0J
+0I
+b0 H
+05
+b0 4
+b0 3
+b0 2
+01
+b0 0
+b0 /
+b0 .
+b0 -
+0,
+0+
+b0 *
+b0 )
+b0 (
+0%
+0$
+0#
+b0 "
+1!
+$end
+#5000
+1+
+#10000
+0+
+#15000
+1+
+#20000
+0+
+1,
+#25000
+1+
+#30000
+b11001 H
+b1001 2
+b1001011 M
+b1001011 3
+b11001 )
+b11001 /
+b1001011 4
+b110010 (
+b110010 .
+0+
+#35000
+0!
+b1001011 "
+b1001011 L
+1+
+#40000
+1J
+b0 M
+15
+b100 2
+b0 3
+1I
+b1111111110011011 H
+b1100100 )
+b1100100 /
+b10000000000000000 4
+b1100100 (
+b1100100 .
+b1 *
+b1 0
+0+
+#45000
+1%
+1!
+b0 "
+b0 L
+1+
+#50000
+b10000 M
+b10000 3
+05
+0J
+b0 H
+b1001000110100 )
+b1001000110100 /
+b10000 4
+b1111 (
+b1111 .
+b10 *
+b10 0
+0+
+#55000
+0%
+0!
+b10000 "
+b10000 L
+1+
+#60000
+b1111111111111111 M
+b1111111111111111 3
+0I
+b1111111111111111 H
+b1111111111111111 4
+b0 (
+b0 .
+b11 *
+b11 0
+0+
+#65000
+1$
+b1111111111111111 "
+b1111111111111111 L
+1+
+#70000
+1K
+11
+b1000000000000000 M
+b1 2
+b1000000000000000 3
+b1 H
+b1 )
+b1 /
+b1000000000000000 4
+b111111111111111 (
+b111111111111111 .
+b0 *
+b0 0
+0+
+#75000
+1#
+b1000000000000000 "
+b1000000000000000 L
+1+
+#80000
+01
+b1111 2
+b1111111100000000 3
+b111100000000 M
+0K
+b0 H
+b111100001111 )
+b111100001111 /
+b1111111100000000 4
+b1111111100000000 (
+b1111111100000000 .
+b100 *
+b100 0
+0+
+#85000
+0$
+0#
+b111100000000 "
+b111100000000 L
+1+
+#90000
+b1111111111111111 M
+b11111111 )
+b11111111 /
+b101 *
+b101 0
+0+
+#95000
+1$
+b1111111111111111 "
+b1111111111111111 L
+1+
+#100000
+b101 2
+b1010101010101010 3
+b101010101010101 )
+b101010101010101 /
+b1010101010101010 4
+b1010101010101010 (
+b1010101010101010 .
+b110 *
+b110 0
+0+
+#105000
+1+
+#110000
+01
+b0 2
+b1001000110100 3
+b1110110111001011 M
+b0 )
+b0 /
+b1001000110100 4
+b1001000110100 (
+b1001000110100 .
+b111 *
+b111 0
+0+
+#115000
+b1110110111001011 "
+b1110110111001011 L
+1+
+#120000
+b1111111111111111 3
+b111111111111 M
+b1111000000000000 )
+b1111000000000000 /
+b1111111111111111 4
+b1111111111111111 (
+b1111111111111111 .
+b1000 *
+b1000 0
+0+
+#125000
+0$
+b111111111111 "
+b111111111111 L
+1+
+#130000
+01
+b11111111 3
+b1111111100000000 M
+b0 )
+b0 /
+b11111111 4
+b11111111 (
+b11111111 .
+b1001 *
+b1001 0
+0+
+#135000
+1$
+b1111111100000000 "
+b1111111100000000 L
+1+
+#140000
+b1000 2
+b1 3
+b100000000 M
+b1000 )
+b1000 /
+b1 4
+b1 (
+b1 .
+b1010 *
+b1010 0
+0+
+#145000
+0$
+b100000000 "
+b100000000 L
+1+
+#150000
+b100 2
+b1000000000000000 3
+b100000000000 M
+b100 )
+b100 /
+b1000000000000000 4
+b1000000000000000 (
+b1000000000000000 .
+b1011 *
+b1011 0
+0+
+#155000
+b100000000000 "
+b100000000000 L
+1+
+#160000
+b1111100000000000 M
+b1100 *
+b1100 0
+0+
+#165000
+1$
+b1111100000000000 "
+b1111100000000000 L
+1+
+#170000
+b10 2
+b1100000000000001 3
+b111 M
+b10 )
+b10 /
+b1100000000000001 4
+b1100000000000001 (
+b1100000000000001 .
+b1101 *
+b1101 0
+0+
+#175000
+0$
+b111 "
+b111 L
+1+
+#180000
+01
+b11 3
+b1100000000000000 M
+b11 4
+b11 (
+b11 .
+b1110 *
+b1110 0
+0+
+#185000
+1$
+b1100000000000000 "
+b1100000000000000 L
+1+
+#190000
+b100 2
+b1010010110100101 3
+b1010010110100101 M
+b1001000110100 )
+b1001000110100 /
+b1010010110100101 4
+b1010010110100101 (
+b1010010110100101 .
+b1111 *
+b1111 0
+0+
+#195000
+b1010010110100101 "
+b1010010110100101 L
+1+
+#196000
