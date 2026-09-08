@@ -1,0 +1,344 @@
+$date
+	Wed Sep 09 01:11:38 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_lifo_stack $end
+$var wire 1 ! underflow $end
+$var wire 1 " overflow $end
+$var wire 1 # full $end
+$var wire 1 $ empty $end
+$var wire 16 % data_out [15:0] $end
+$var parameter 32 & CLK_PERIOD $end
+$var parameter 32 ' DATA_WIDTH $end
+$var parameter 32 ( DEPTH $end
+$var parameter 32 ) PTR_WIDTH $end
+$var reg 1 * clk $end
+$var reg 16 + data_in [15:0] $end
+$var reg 1 , nreset $end
+$var reg 1 - pop $end
+$var reg 1 . push $end
+$var integer 32 / errors [31:0] $end
+$var integer 32 0 j [31:0] $end
+$scope module uut $end
+$var wire 1 * clk $end
+$var wire 16 1 d_in [15:0] $end
+$var wire 1 , nreset $end
+$var wire 1 - pop $end
+$var wire 1 . push $end
+$var wire 1 # full $end
+$var wire 1 $ empty $end
+$var parameter 32 2 DATA_WIDTH $end
+$var parameter 32 3 DEPTH $end
+$var parameter 32 4 PTR_WIDTH $end
+$var reg 3 5 SP [2:0] $end
+$var reg 4 6 count [3:0] $end
+$var reg 16 7 d_out [15:0] $end
+$var reg 1 " overflow $end
+$var reg 1 ! underflow $end
+$var integer 32 8 i [31:0] $end
+$upscope $end
+$scope task stack_pop $end
+$var reg 16 9 exp_dout [15:0] $end
+$upscope $end
+$scope task stack_push $end
+$var reg 16 : din [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b11 4
+b1000 3
+b10000 2
+b11 )
+b1000 (
+b10000 '
+b1010 &
+$end
+#0
+$dumpvars
+bx :
+bx 9
+b1000 8
+b0 7
+b0 6
+b0 5
+b0 1
+bx 0
+b0 /
+0.
+0-
+0,
+b0 +
+0*
+b0 %
+1$
+0#
+0"
+0!
+$end
+#5000
+b1000 8
+1*
+#10000
+0*
+#15000
+b1000 8
+1*
+#20000
+1,
+0*
+#21000
+b100000000 :
+b0 0
+#25000
+1*
+#30000
+b100000000 +
+b100000000 1
+1.
+0*
+#35000
+0$
+b1 6
+b1 5
+1*
+#36000
+b100000001 :
+b1 0
+0.
+#40000
+b100000001 +
+b100000001 1
+1.
+0*
+#45000
+b10 6
+b10 5
+1*
+#46000
+b100000010 :
+b10 0
+0.
+#50000
+b100000010 +
+b100000010 1
+1.
+0*
+#55000
+b11 6
+b11 5
+1*
+#56000
+b100000011 :
+b11 0
+0.
+#60000
+b100000011 +
+b100000011 1
+1.
+0*
+#65000
+b100 6
+b100 5
+1*
+#66000
+b100000100 :
+b100 0
+0.
+#70000
+b100000100 +
+b100000100 1
+1.
+0*
+#75000
+b101 6
+b101 5
+1*
+#76000
+b100000101 :
+b101 0
+0.
+#80000
+b100000101 +
+b100000101 1
+1.
+0*
+#85000
+b110 6
+b110 5
+1*
+#86000
+b100000110 :
+b110 0
+0.
+#90000
+b100000110 +
+b100000110 1
+1.
+0*
+#95000
+b111 6
+b111 5
+1*
+#96000
+b100000111 :
+b111 0
+0.
+#100000
+b100000111 +
+b100000111 1
+1.
+0*
+#105000
+1#
+b1000 6
+b0 5
+1*
+#106000
+b1101111010101101 :
+b1000 0
+0.
+#110000
+b1101111010101101 +
+b1101111010101101 1
+1.
+0*
+#115000
+1"
+1*
+#116000
+0.
+#120000
+b1100101011111110 +
+b1100101011111110 1
+1-
+1.
+0*
+#125000
+b100000111 %
+b100000111 7
+0"
+1*
+#126000
+b1100101011111110 9
+0-
+0.
+#130000
+1-
+0*
+#135000
+0#
+b111 6
+b111 5
+b1100101011111110 %
+b1100101011111110 7
+1*
+#136000
+b100000110 9
+b110 0
+0-
+#140000
+1-
+0*
+#145000
+b110 6
+b110 5
+b100000110 %
+b100000110 7
+1*
+#146000
+b100000101 9
+b101 0
+0-
+#150000
+1-
+0*
+#155000
+b101 6
+b101 5
+b100000101 %
+b100000101 7
+1*
+#156000
+b100000100 9
+b100 0
+0-
+#160000
+1-
+0*
+#165000
+b100 6
+b100 5
+b100000100 %
+b100000100 7
+1*
+#166000
+b100000011 9
+b11 0
+0-
+#170000
+1-
+0*
+#175000
+b11 6
+b11 5
+b100000011 %
+b100000011 7
+1*
+#176000
+b100000010 9
+b10 0
+0-
+#180000
+1-
+0*
+#185000
+b10 6
+b10 5
+b100000010 %
+b100000010 7
+1*
+#186000
+b100000001 9
+b1 0
+0-
+#190000
+1-
+0*
+#195000
+b1 6
+b1 5
+b100000001 %
+b100000001 7
+1*
+#196000
+b100000000 9
+b0 0
+0-
+#200000
+1-
+0*
+#205000
+1$
+b0 6
+b0 5
+b100000000 %
+b100000000 7
+1*
+#206000
+b11111111111111111111111111111111 0
+0-
+#210000
+1-
+0*
+#215000
+1!
+1*
+#216000
+0-
