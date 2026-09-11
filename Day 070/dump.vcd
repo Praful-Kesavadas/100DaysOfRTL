@@ -1,0 +1,352 @@
+$date
+	Fri Sep 11 16:17:28 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_direct_mapped_cache $end
+$var wire 1 ! mem_wr $end
+$var wire 32 " mem_wdata [31:0] $end
+$var wire 1 # mem_req $end
+$var wire 16 $ mem_addr [15:0] $end
+$var wire 1 % cpu_ready $end
+$var wire 32 & cpu_rdata [31:0] $end
+$var parameter 32 ' ADDR_WIDTH $end
+$var parameter 32 ( CLK_PERIOD $end
+$var parameter 32 ) DATA_WIDTH $end
+$var reg 1 * clk $end
+$var reg 16 + cpu_addr [15:0] $end
+$var reg 1 , cpu_req $end
+$var reg 32 - cpu_wdata [31:0] $end
+$var reg 1 . cpu_wr $end
+$var reg 32 / mem_rdata [31:0] $end
+$var reg 1 0 mem_ready $end
+$var reg 1 1 nreset $end
+$var integer 32 2 errors [31:0] $end
+$var integer 32 3 j [31:0] $end
+$scope module uut $end
+$var wire 1 * clk $end
+$var wire 16 4 cpu_addr [15:0] $end
+$var wire 1 , cpu_req $end
+$var wire 32 5 cpu_wdata [31:0] $end
+$var wire 1 . cpu_wr $end
+$var wire 1 6 is_hit $end
+$var wire 32 7 mem_rdata [31:0] $end
+$var wire 1 0 mem_ready $end
+$var wire 1 1 nreset $end
+$var wire 13 8 tag [12:0] $end
+$var wire 3 9 index [2:0] $end
+$var parameter 32 : ADDR_WIDTH $end
+$var parameter 32 ; DATA_WIDTH $end
+$var parameter 32 < INDEX_BITS $end
+$var parameter 32 = LINE_COUNT $end
+$var parameter 2 > S_ALLOCATE $end
+$var parameter 2 ? S_COMP_TAG $end
+$var parameter 2 @ S_IDLE $end
+$var parameter 2 A S_WB $end
+$var parameter 33 B TAG_BITS $end
+$var reg 32 C cpu_rdata [31:0] $end
+$var reg 1 % cpu_ready $end
+$var reg 16 D mem_addr [15:0] $end
+$var reg 1 # mem_req $end
+$var reg 32 E mem_wdata [31:0] $end
+$var reg 1 ! mem_wr $end
+$var reg 2 F next_state [1:0] $end
+$var reg 2 G state [1:0] $end
+$var integer 32 H i [31:0] $end
+$upscope $end
+$scope task cpu_access $end
+$var reg 16 I addr [15:0] $end
+$var reg 32 J exp_rdata [31:0] $end
+$var reg 32 K wdata [31:0] $end
+$var reg 1 L wr $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1101 B
+b10 A
+b0 @
+b1 ?
+b11 >
+b1000 =
+b11 <
+b100000 ;
+b10000 :
+b100000 )
+b1010 (
+b10000 '
+$end
+#0
+$dumpvars
+xL
+bx K
+bx J
+bx I
+b1000 H
+b0 G
+b0 F
+b0 E
+b0 D
+b0 C
+b0 9
+b0 8
+b0 7
+06
+b0 5
+b0 4
+b100000000 3
+b0 2
+01
+00
+b0 /
+0.
+b0 -
+0,
+b0 +
+0*
+b0 &
+0%
+b0 $
+0#
+b0 "
+0!
+$end
+#5000
+b1000 H
+1*
+#10000
+0*
+#15000
+b1000 H
+1*
+#20000
+11
+0*
+#21000
+b10100000000000000000000000000011 J
+b0 K
+b11 I
+0L
+#25000
+1*
+#30000
+b11 9
+b1 F
+b11 +
+b11 4
+1,
+0*
+#35000
+b11 F
+b1 G
+1*
+#40000
+0*
+#45000
+b11 $
+b11 D
+1#
+b11 G
+1*
+#50000
+0*
+#55000
+b1 F
+b10100000000000000000000000000011 /
+b10100000000000000000000000000011 7
+10
+1*
+#60000
+0*
+#65000
+b10100000000000000000000000000011 &
+b10100000000000000000000000000011 C
+1%
+16
+b0 $
+b0 D
+0#
+b0 F
+00
+b1 G
+1*
+#70000
+0*
+#75000
+b0 &
+b0 C
+0%
+b1 F
+b0 G
+1*
+#76000
+b0 F
+0,
+#80000
+b1 F
+1,
+0*
+#85000
+b10100000000000000000000000000011 &
+b10100000000000000000000000000011 C
+1%
+b0 F
+b1 G
+1*
+#90000
+0*
+#95000
+b0 &
+b0 C
+0%
+b1 F
+b0 G
+1*
+#96000
+b0 F
+b0 J
+b11011110101011011011111011101111 K
+1L
+0,
+#100000
+b1 F
+b11011110101011011011111011101111 -
+b11011110101011011011111011101111 5
+1.
+1,
+0*
+#105000
+1%
+b0 F
+b1 G
+1*
+#110000
+0*
+#115000
+b1 F
+0%
+b0 G
+1*
+#116000
+b0 F
+b11011110101011011011111011101111 J
+b0 K
+0L
+0.
+0,
+#120000
+b1 F
+b0 -
+b0 5
+1,
+0*
+#125000
+b11011110101011011011111011101111 &
+b11011110101011011011111011101111 C
+1%
+b0 F
+b1 G
+1*
+#130000
+0*
+#135000
+b0 &
+b0 C
+0%
+b1 F
+b0 G
+1*
+#136000
+b0 F
+b10100000000000000000000010000011 J
+b10000011 I
+0,
+#140000
+06
+b10000 8
+b1 F
+b10000011 +
+b10000011 4
+1,
+0*
+#145000
+b10 F
+b1 G
+1*
+#150000
+0*
+#155000
+b11011110101011011011111011101111 "
+b11011110101011011011111011101111 E
+b11 $
+b11 D
+1!
+1#
+b10 G
+1*
+#160000
+0*
+#165000
+b11 F
+10
+1*
+#170000
+0*
+#175000
+b0 "
+b0 E
+b10000011 $
+b10000011 D
+0!
+1#
+b11 G
+00
+1*
+#180000
+0*
+#185000
+b1 F
+b10100000000000000000000010000011 /
+b10100000000000000000000010000011 7
+10
+1*
+#190000
+0*
+#195000
+b10100000000000000000000010000011 &
+b10100000000000000000000010000011 C
+1%
+16
+b0 $
+b0 D
+0#
+b0 F
+b1 G
+00
+1*
+#200000
+0*
+#205000
+b0 &
+b0 C
+0%
+b1 F
+b0 G
+1*
+#206000
+b0 F
+0,
+#210000
+0*
+#215000
+1*
+#220000
+0*
+#225000
+1*
+#226000
