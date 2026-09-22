@@ -1,0 +1,67 @@
+// Verilog $readmemh Memory File: program.mem
+// Format: 32-bit Hexadecimal Words | Depth: 64 words
+
+00500093 // [0x0000 | Word  0]: addi x1, x0, 5
+00A00113 // [0x0004 | Word  1]: addi x2, x0, 10
+002081B3 // [0x0008 | Word  2]: add  x3, x1, x2
+40110233 // [0x000C | Word  3]: sub  x4, x2, x1
+0000006F // [0x0010 | Word  4]: jal  x0, 0
+00000013 // [0x0014 | Word  5]: nop
+00000013 // [0x0018 | Word  6]: nop
+00000013 // [0x001C | Word  7]: nop
+11111113 // [0x0020 | Word  8]: 0x11111113
+00000013 // [0x0024 | Word  9]: nop (padding)
+00000013 // [0x0028 | Word 10]: nop (padding)
+00000013 // [0x002C | Word 11]: nop (padding)
+00000013 // [0x0030 | Word 12]: nop (padding)
+00000013 // [0x0034 | Word 13]: nop (padding)
+00000013 // [0x0038 | Word 14]: nop (padding)
+00000013 // [0x003C | Word 15]: nop (padding)
+00000013 // [0x0040 | Word 16]: nop (padding)
+00000013 // [0x0044 | Word 17]: nop (padding)
+00000013 // [0x0048 | Word 18]: nop (padding)
+00000013 // [0x004C | Word 19]: nop (padding)
+00000013 // [0x0050 | Word 20]: nop (padding)
+00000013 // [0x0054 | Word 21]: nop (padding)
+00000013 // [0x0058 | Word 22]: nop (padding)
+00000013 // [0x005C | Word 23]: nop (padding)
+00000013 // [0x0060 | Word 24]: nop (padding)
+00000013 // [0x0064 | Word 25]: nop (padding)
+00000013 // [0x0068 | Word 26]: nop (padding)
+00000013 // [0x006C | Word 27]: nop (padding)
+00000013 // [0x0070 | Word 28]: nop (padding)
+00000013 // [0x0074 | Word 29]: nop (padding)
+00000013 // [0x0078 | Word 30]: nop (padding)
+00000013 // [0x007C | Word 31]: nop (padding)
+00000013 // [0x0080 | Word 32]: nop (padding)
+00000013 // [0x0084 | Word 33]: nop (padding)
+00000013 // [0x0088 | Word 34]: nop (padding)
+00000013 // [0x008C | Word 35]: nop (padding)
+00000013 // [0x0090 | Word 36]: nop (padding)
+00000013 // [0x0094 | Word 37]: nop (padding)
+00000013 // [0x0098 | Word 38]: nop (padding)
+00000013 // [0x009C | Word 39]: nop (padding)
+00000013 // [0x00A0 | Word 40]: nop (padding)
+00000013 // [0x00A4 | Word 41]: nop (padding)
+00000013 // [0x00A8 | Word 42]: nop (padding)
+00000013 // [0x00AC | Word 43]: nop (padding)
+00000013 // [0x00B0 | Word 44]: nop (padding)
+00000013 // [0x00B4 | Word 45]: nop (padding)
+00000013 // [0x00B8 | Word 46]: nop (padding)
+00000013 // [0x00BC | Word 47]: nop (padding)
+00000013 // [0x00C0 | Word 48]: nop (padding)
+00000013 // [0x00C4 | Word 49]: nop (padding)
+00000013 // [0x00C8 | Word 50]: nop (padding)
+00000013 // [0x00CC | Word 51]: nop (padding)
+00000013 // [0x00D0 | Word 52]: nop (padding)
+00000013 // [0x00D4 | Word 53]: nop (padding)
+00000013 // [0x00D8 | Word 54]: nop (padding)
+00000013 // [0x00DC | Word 55]: nop (padding)
+00000013 // [0x00E0 | Word 56]: nop (padding)
+00000013 // [0x00E4 | Word 57]: nop (padding)
+00000013 // [0x00E8 | Word 58]: nop (padding)
+00000013 // [0x00EC | Word 59]: nop (padding)
+00000013 // [0x00F0 | Word 60]: nop (padding)
+00000013 // [0x00F4 | Word 61]: nop (padding)
+00000013 // [0x00F8 | Word 62]: nop (padding)
+00000013 // [0x00FC | Word 63]: nop (padding)
