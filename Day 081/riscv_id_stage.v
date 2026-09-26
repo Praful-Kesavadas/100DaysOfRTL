@@ -114,7 +114,7 @@ module riscv_id_stage (
             id_ex_rd <= 5'd0;
             id_ex_funct3 <= 3'd0;
             id_ex_funct7 <= 7'd0;
-            id_ex_opcode <= 7'b0010011; //NOP Opcode
+            id_ex_opcode <= 7'b0000000; //NOP Opcode
         end 
         else if(flush_ex) begin
             id_ex_pc <= 32'd0;
@@ -129,7 +129,7 @@ module riscv_id_stage (
             id_ex_rd <= 5'd0;
             id_ex_funct3 <= 3'd0;
             id_ex_funct7 <= 7'd0;
-            id_ex_opcode <= 7'b0010011; //NOP Opcode
+            id_ex_opcode <= 7'b0000000; //NOP Opcode
         end 
         else if(!stall_ex) begin
             id_ex_pc <= if_id_pc;

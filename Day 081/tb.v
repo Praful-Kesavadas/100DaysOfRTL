@@ -87,7 +87,7 @@ module tb_riscv_id_stage();
         flush_ex        = 0;
         if_id_pc        = 32'd0;
         if_id_pc_plus_4 = 32'd4;
-        if_id_instr     = 32'h0000_0013; // NOP
+        if_id_instr     = 32'h0000_0000; // NOP
         wb_reg_write    = 0;
         wb_rd           = 5'd0;
         wb_wdata        = 32'd0;
@@ -315,7 +315,7 @@ module tb_riscv_id_stage();
 
         @(posedge clk);
         #(1);
-        if (id_ex_opcode !== 7'b0010011 || id_ex_rd !== 5'd0 ||
+        if (id_ex_opcode !== 7'b0000000 || id_ex_rd !== 5'd0 ||
             id_ex_rs1_valid !== 1'b0    || id_ex_rs2_valid !== 1'b0) begin
             $display("[FAIL] Flush failed to inject NOP bubble or clear valids! Opcode: 0x%02h, rd: %0d, v1=%b, v2=%b",
                      id_ex_opcode, id_ex_rd, id_ex_rs1_valid, id_ex_rs2_valid);
