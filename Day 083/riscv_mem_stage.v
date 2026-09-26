@@ -105,13 +105,13 @@ module riscv_mem_stage (
         if(!nreset) begin
             mem_wb_wdata <= 32'd0;
             mem_wb_rd <= 5'd0;
-            mem_wb_opcode <= 7'b0010011; //NOP
+            mem_wb_opcode <= 7'b0000000; //NOP
             mem_wb_reg_write <= 1'b0;
         end
         else if(flush_wb) begin
             mem_wb_wdata <= 32'd0;
             mem_wb_rd <= 5'd0;
-            mem_wb_opcode <= 7'b0010011; //NOP
+            mem_wb_opcode <= 7'b0000000; //NOP
             mem_wb_reg_write <= 1'b0;
         end
         else if(!stall_wb) begin

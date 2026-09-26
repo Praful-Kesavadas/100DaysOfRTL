@@ -85,7 +85,7 @@ module tb_riscv_mem_stage();
         ex_mem_wdata      = 32'd0;
         ex_mem_rd         = 5'd0;
         ex_mem_funct3     = 3'd0;
-        ex_mem_opcode     = 7'b0010011;
+        ex_mem_opcode     = 7'b0000000;
         ex_mem_reg_write  = 0;
         ex_mem_mem_read   = 0;
         ex_mem_mem_write  = 0;

@@ -1,5 +1,5 @@
 $date
-	Sat Sep 26 03:03:52 2026
+	Sat Sep 26 13:24:53 2026
 $end
 $version
 	Icarus Verilog
@@ -89,7 +89,7 @@ $end
 $dumpvars
 b0 T
 b0 S
-b10011 R
+b0 R
 b0 Q
 b0 P
 b0 O
@@ -103,7 +103,7 @@ b0 J
 0G
 b0 F
 b0 E
-b10011 D
+b0 D
 b0 C
 b0 B
 b0 A
@@ -119,7 +119,7 @@ b0 9
 b0 5
 04
 b0 3
-b10011 2
+b0 2
 01
 00
 b0 /
@@ -130,7 +130,7 @@ b0 +
 b0 )
 b0 (
 b0 '
-b10011 &
+b0 &
 b0 %
 0$
 b0 #
