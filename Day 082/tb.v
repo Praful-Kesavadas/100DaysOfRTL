@@ -107,7 +107,7 @@ module tb_riscv_ex_stage();
         id_ex_rd        = 5'd0;
         id_ex_funct3    = 3'd0;
         id_ex_funct7    = 7'd0;
-        id_ex_opcode    = 7'b0010011; // NOP
+        id_ex_opcode    = 7'b0000000; // NOP
 
         #(CLK_PERIOD * 3);
         @(negedge clk);

@@ -171,7 +171,7 @@ module riscv_ex_stage (
             ex_mem_wdata <= 32'd0;
             ex_mem_rd <= 5'd0;
             ex_mem_funct3 <= 3'd0;
-            ex_mem_opcode <= 7'b0010011; //NOP
+            ex_mem_opcode <= 7'b0000000; //NOP
             ex_mem_reg_write <= 1'b0;
             ex_mem_mem_read <= 1'b0;
             ex_mem_mem_write <= 1'b0;
@@ -182,7 +182,7 @@ module riscv_ex_stage (
             ex_mem_wdata <= 32'd0;
             ex_mem_rd <= 5'd0;
             ex_mem_funct3 <= 3'd0;
-            ex_mem_opcode <= 7'b0010011; //NOP
+            ex_mem_opcode <= 7'b0000000; //NOP
             ex_mem_reg_write <= 1'b0;
             ex_mem_mem_read <= 1'b0;
             ex_mem_mem_write <= 1'b0;
