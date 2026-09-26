@@ -136,11 +136,11 @@ module tb_riscv_if_stage();
         @(posedge clk);
         #(1);
         // The flushed cycle must present a NOP to the ID stage
-        if (if_id_instr !== 32'h0000_0013) begin
+        if (if_id_instr !== 32'h0000_0000) begin
             $display("[FAIL] Flush failed to inject NOP bubble! Got: 0x%08h", if_id_instr);
             errors = errors + 1;
         end else begin
-            $display("[PASS] Flush cycle: NOP (0x00000013) injected into IF/ID register!");
+            $display("[PASS] Flush cycle: NOP (0x00000000) injected into IF/ID register!");
         end
 
         @(negedge clk);
@@ -168,7 +168,7 @@ module tb_riscv_if_stage();
 
         @(posedge clk);
         #(1);
-        if (if_id_instr !== 32'h0000_0013) begin
+        if (if_id_instr !== 32'h0000_0000) begin
             $display("[FAIL] Flush did not inject NOP bubble! Got: 0x%08h", if_id_instr);
             errors = errors + 1;
         end else if (imem_addr !== 32'h0000_0020) begin

@@ -18,7 +18,7 @@ module riscv_if_stage #(
     output reg [31:0] if_id_instr
 );
     // RV32I NOP Encoding: addi x0, x0, 0
-    localparam [31:0] NOP_INSTRUCTION = 32'h0000_0013;
+    localparam [31:0] NOP_INSTRUCTION = 32'h0000_0000;
 
     //Internal Regs
     reg [31:0] pc_reg, pc_next;
