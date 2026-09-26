@@ -1,0 +1,240 @@
+$date
+	Sat Sep 26 13:38:55 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_riscv_wb_stage $end
+$var wire 32 ! wb_rf_wdata [31:0] $end
+$var wire 1 " wb_rf_reg_write $end
+$var wire 5 # wb_rf_rd [4:0] $end
+$var wire 1 $ wb_retired_valid $end
+$var wire 5 % wb_retired_rd [4:0] $end
+$var wire 32 & wb_retired_data [31:0] $end
+$var wire 32 ' wb_fwd_data [31:0] $end
+$var wire 32 ( rf_rdata2 [31:0] $end
+$var wire 32 ) rf_rdata1 [31:0] $end
+$var parameter 32 * CLK_PERIOD $end
+$var reg 1 + clk $end
+$var reg 7 , mem_wb_opcode [6:0] $end
+$var reg 5 - mem_wb_rd [4:0] $end
+$var reg 1 . mem_wb_reg_write $end
+$var reg 32 / mem_wb_wdata [31:0] $end
+$var reg 5 0 rf_raddr1 [4:0] $end
+$var reg 5 1 rf_raddr2 [4:0] $end
+$var integer 32 2 errors [31:0] $end
+$scope module u_regfile $end
+$var wire 1 + clk $end
+$var wire 5 3 rs1 [4:0] $end
+$var wire 5 4 rs2 [4:0] $end
+$var wire 32 5 w_data [31:0] $end
+$var wire 1 " reg_write $end
+$var wire 32 6 rdata2 [31:0] $end
+$var wire 32 7 rdata1 [31:0] $end
+$var wire 5 8 rd [4:0] $end
+$var integer 32 9 i [31:0] $end
+$upscope $end
+$scope module u_wb_stage $end
+$var wire 7 : mem_wb_opcode [6:0] $end
+$var wire 5 ; mem_wb_rd [4:0] $end
+$var wire 1 . mem_wb_reg_write $end
+$var wire 32 < mem_wb_wdata [31:0] $end
+$var wire 32 = wb_fwd_data [31:0] $end
+$var wire 32 > wb_retired_data [31:0] $end
+$var wire 5 ? wb_retired_rd [4:0] $end
+$var wire 5 @ wb_rf_rd [4:0] $end
+$var wire 1 " wb_rf_reg_write $end
+$var wire 32 A wb_rf_wdata [31:0] $end
+$var wire 1 $ wb_retired_valid $end
+$var wire 1 B is_rd_valid $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1010 *
+$end
+#0
+$dumpvars
+0B
+b0 A
+b0 @
+b0 ?
+b0 >
+b0 =
+b0 <
+b0 ;
+b0 :
+b100000 9
+b0 8
+b0 7
+b0 6
+b0 5
+b0 4
+b0 3
+b0 2
+b0 1
+b0 0
+b0 /
+0.
+b0 -
+b0 ,
+0+
+b0 )
+b0 (
+b0 '
+b0 &
+b0 %
+0$
+b0 #
+0"
+b0 !
+$end
+#5000
+1+
+#10000
+0+
+#15000
+1+
+#20000
+1"
+1.
+1$
+b110011 ,
+b110011 :
+b101 %
+b101 ?
+b101 #
+b101 8
+b101 @
+1B
+b101 -
+b101 ;
+b10100101101001010101101001011010 &
+b10100101101001010101101001011010 >
+b10100101101001010101101001011010 !
+b10100101101001010101101001011010 5
+b10100101101001010101101001011010 A
+b10100101101001010101101001011010 '
+b10100101101001010101101001011010 =
+b10100101101001010101101001011010 /
+b10100101101001010101101001011010 <
+0+
+#25000
+1+
+#26000
+b10100101101001010101101001011010 )
+b10100101101001010101101001011010 7
+b101 0
+b101 3
+#30000
+b10100101101001010101101001011010 )
+b10100101101001010101101001011010 7
+0"
+0.
+0$
+b0 ,
+b0 :
+b1010 %
+b1010 ?
+b1010 #
+b1010 8
+b1010 @
+b1010 -
+b1010 ;
+b11011110101011011011111011101111 &
+b11011110101011011011111011101111 >
+b11011110101011011011111011101111 !
+b11011110101011011011111011101111 5
+b11011110101011011011111011101111 A
+b11011110101011011011111011101111 '
+b11011110101011011011111011101111 =
+b11011110101011011011111011101111 /
+b11011110101011011011111011101111 <
+0+
+#35000
+1+
+#40000
+1.
+1$
+b10011 ,
+b10011 :
+b0 %
+b0 ?
+b0 #
+b0 8
+b0 @
+0B
+b0 -
+b0 ;
+b0 &
+b0 >
+b0 !
+b0 5
+b0 A
+b0 '
+b0 =
+b0 /
+b0 <
+0+
+#45000
+1+
+#50000
+b110011 ,
+b110011 :
+b11111111111111111111111111111111 &
+b11111111111111111111111111111111 >
+b11111111111111111111111111111111 !
+b11111111111111111111111111111111 5
+b11111111111111111111111111111111 A
+b11111111111111111111111111111111 '
+b11111111111111111111111111111111 =
+b11111111111111111111111111111111 /
+b11111111111111111111111111111111 <
+0+
+#55000
+1+
+#56000
+b0 )
+b0 7
+b0 0
+b0 3
+#60000
+b10010001101000101011001111000 )
+b10010001101000101011001111000 7
+1"
+b1100 0
+b1100 3
+b11 ,
+b11 :
+b1100 %
+b1100 ?
+b1100 #
+b1100 8
+b1100 @
+1B
+b1100 -
+b1100 ;
+b10010001101000101011001111000 &
+b10010001101000101011001111000 >
+b10010001101000101011001111000 !
+b10010001101000101011001111000 5
+b10010001101000101011001111000 A
+b10010001101000101011001111000 '
+b10010001101000101011001111000 =
+b10010001101000101011001111000 /
+b10010001101000101011001111000 <
+0+
+#65000
+1+
+#70000
+0+
+#75000
+1+
+#80000
+0+
+#85000
+1+
