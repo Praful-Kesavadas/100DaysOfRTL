@@ -27,8 +27,6 @@ module riscv_id_stage (
     output reg [6:0] id_ex_funct7,
     output reg [6:0] id_ex_opcode
 );
-    //NOP Encoding
-    localparam [31:0] NOP_INSTRUCTION = 32'h0000_0013;
 
     wire [6:0] raw_opcode = if_id_instr[6:0];
     wire [4:0] raw_rd     = if_id_instr[11:7];
