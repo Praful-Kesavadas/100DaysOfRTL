@@ -1,0 +1,2 @@
+`define ARRAY_WORDS 10
+`define TIMEOUT_CYCLES 5000
