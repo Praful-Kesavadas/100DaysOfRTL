@@ -22,7 +22,6 @@ module cordic_rotation#(parameter DATA_WIDTH = 16, parameter ITERATIONS = 16
     //To prevent the truncation
     wire signed [31:0] x_in_32 = {{16{x_in[DATA_WIDTH-1]}}, x_in};
     wire signed [31:0] y_in_32 = {{16{y_in[DATA_WIDTH-1]}}, y_in};
-    wire signed [31:0] k_32    = {{16{CORDIC_1_K[DATA_WIDTH-1]}}, CORDIC_1_K};
 
     //Prescaling of the inputs
     wire signed [2*DATA_WIDTH-1:0] x_prescaled = (x_in_32 * CORDIC_1_K) >>> 14;
