@@ -45,7 +45,7 @@ module tb_cordic_processor;
     wire signed [DATA_WIDTH-1:0] y_out;
     wire valid;
 
-    cordic_rotation #(
+    cordic_rotation_updated #(
         .DATA_WIDTH(DATA_WIDTH),
         .ITERATIONS(ITERATIONS)
     ) uut (

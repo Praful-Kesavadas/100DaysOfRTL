@@ -16,7 +16,7 @@
 //   rotated by pi (negate x and y) and pi is added to / subtracted from theta. The
 //   residual angle is then within +/-pi/2, inside the convergence range.
 // =============================================================================
-module cordic_rotation#(parameter DATA_WIDTH = 16, parameter ITERATIONS = 16
+module cordic_rotation_updated#(parameter DATA_WIDTH = 16, parameter ITERATIONS = 16
 )(
     input clk, nreset, start,
     input [DATA_WIDTH-1:0] x_in, y_in, theta_in,
